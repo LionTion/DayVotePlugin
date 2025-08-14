@@ -1,7 +1,7 @@
 name: DayVote
 description: Plugin for Day-Voting
 author: LionTion
-version: 0.0.1
+version: 0.1.2
 main: Main
 prefix: DayVote
 
@@ -30,5 +30,10 @@ commands:
     description: Cancels a day-vote.
     usage: "Usage: /cleardayvotetimeout or /cdvt"
     aliases: [ cdvt ]
+    permission: voting.controls
+    permission-message: You do not have permission to use this command.
+  reloaddayvoteconfig:
+    description: Reloads the config.
+    usage: "Usage: /reloaddayvoteconfig"
     permission: voting.controls
     permission-message: You do not have permission to use this command.

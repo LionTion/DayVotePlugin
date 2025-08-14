@@ -4,9 +4,11 @@ import org.bukkit.entity.Player;
 public class Vote {
     UUID[] allowedPlayers;
     boolean[] votesPlayers;
+    double votePerc;
     int scheduledTask;
 
-    public Vote(Player[] allowedPlayers, int scheduledTask) {
+    public Vote(Player[] allowedPlayers, double votePerc, int scheduledTask) {
+        this.votePerc = votePerc;
         this.scheduledTask = scheduledTask;
         this.allowedPlayers = new UUID[allowedPlayers.length];
         votesPlayers = new boolean[this.allowedPlayers.length];
