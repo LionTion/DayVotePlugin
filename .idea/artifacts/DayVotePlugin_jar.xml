@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="DayVotePlugin:jar">
+    <output-path>$PROJECT_DIR$/testServer/plugins</output-path>
+    <root id="archive" name="DayVotePlugin.jar">
+      <element id="module-output" name="DayVotePlugin" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/craftbukkit1-7-3(1060).jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
