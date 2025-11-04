@@ -21,6 +21,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="craftbukkit1-7-3(1060)" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="craftbukkit1-7-3(1060)" level="project" />
   </component>
 </module>
