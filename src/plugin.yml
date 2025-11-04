@@ -1,0 +1,39 @@
+name: DayVote
+description: Plugin for Day-Voting
+author: LionTion
+version: 0.1.2
+main: Main
+prefix: DayVote
+
+permissions:
+  voting.rights:
+    description: Permissions for voting purposes
+    default: true
+  voting.controls:
+    description: Permissions for controlling votes
+    default: false
+
+commands:
+  dayvote:
+    description: Casts a day-vote.
+    usage: "Usage: /dayvote, /voteday, /vd, /dv"
+    aliases: [dv, dayv, vd, voteday]
+    permission: voting.rights
+    permission-message: You do not have permission to use this command.
+  cancelvote:
+    description: Cancels a day-vote.
+    usage: "Usage: /cancelvote, /votecancel, /cv, /vc"
+    aliases: [ cv, votecancel, vc ]
+    permission: voting.controls
+    permission-message: You do not have permission to use this command.
+  cleardayvotetimeout:
+    description: Cancels a day-vote.
+    usage: "Usage: /cleardayvotetimeout or /cdvt"
+    aliases: [ cdvt ]
+    permission: voting.controls
+    permission-message: You do not have permission to use this command.
+  reloaddayvoteconfig:
+    description: Reloads the config.
+    usage: "Usage: /reloaddayvoteconfig"
+    permission: voting.controls
+    permission-message: You do not have permission to use this command.
